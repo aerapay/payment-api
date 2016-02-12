@@ -26,7 +26,7 @@ __Request__
 
 Field | Type | Required | Description
 ------|------------|------------|------------
-redirect | *String* | Yes | Redirect url for payment result.
+redirect | *String* | Yes | Redirect url for payment result
 merchant | *Object* | No | 
 merchant.name | *String* | No | Name of the merchant
 merchant.email | *String* | No | Support email address 
@@ -42,3 +42,21 @@ order.items[n].name | *String* | No | Name of the item
 order.items[n].amount | *String* | No | Amount of the item
 order.items[n].quantity | *String* | No | Number of items
 attachment | *Object* | No | Will be attached to each response
+
+__Response__
+
+Field | Type | Description
+------|------------|------------
+token | *String* | Token to identitfy and access payment
+result | *Object* | 
+result.code | *Number* | Result code
+result.message | *String* | Result message
+
+__Result Codes__
+
+Code | Description
+------|------------
+20 | Payment approved
+31 | Authentication failed
+44 | Validation error
+57 | Total invalid
