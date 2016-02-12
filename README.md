@@ -56,7 +56,7 @@ token | *String* | Token to identitfy and access payment
 result | *Object* | 
 result.code | *Number* | **Result codes**
 result.message | *String* | Detailed message
-attachment | *Object* | No | Your defined attachment
+attachment | *Object* | Your defined attachment
 
 __Result Codes__
 
@@ -103,5 +103,5 @@ payer.address.city | *String* | city
 payer.address.state | *String* | state 
 payer.address.country | *String* | country 
 payer.nationality | *String* | Nationality of the payer
-attachment | *Object* | No | Your defined attachment
+attachment | *Object* | Your defined attachment
 
