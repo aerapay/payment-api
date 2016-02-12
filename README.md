@@ -14,8 +14,8 @@ The Aerapay Checkout method allows merchants to receive payments within the Aera
 
 1. Submits all payment details to Aerapay via `POST` to `/checkout` and receives a payment token
 2. Redirects the buyer to the Aerapay checkout page
-3. Recieves result, and if successful payment and payer information
-4. Updates the payment details optional via `POST` to `/update`
+3. Recieves the result, and if successful payment and payer information
+4. Updates the payment details optionally via `POST` to `/update`
 5. Completes the payment via `POST` to `/complete`
 
 Environment | URL
@@ -76,7 +76,7 @@ https://`AERAPAY_ENVIRONMENT`/?token=`TOKEN`
 
 ## 3. Confirmed payment, redirect to the result URL
 
-Attached is a base64 encoded URL parameter named „result“ JSON String. Decode and parse.
+Attached is a base64 encoded JSON String as URL parameter named „result“. Decode and parse.
 
 Field | Type | Description
 ------|------------|------------
