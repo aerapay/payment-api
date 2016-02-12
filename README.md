@@ -72,6 +72,13 @@ Code | Description
 44 | Validation error
 57 | Invalid total
 
+__Currencies__
+
+Code | Description
+------|------------
+USD | US Dollars
+EUR | Euro
+
 ## 2. Redirect to checkout page
 
 Once your payment got approved, build the checkout URL and redirect the buyer to the Aerapay checkout page.
@@ -109,7 +116,7 @@ payer.address.country | *String* | country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
-## 4. Update your payment (optinal)
+## 4. Update your payment (optional)
 
 You...
 
