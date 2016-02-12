@@ -21,7 +21,7 @@ The Aerapay Checkout method allows merchants to receive payments within the Aera
 Environment | URL
 ------|------------
 Live | https://payment.aerapay.com/
-Test | https://testpayment.aerapay.com/
+Test | https://payment2test.aerapay.com/
 
 ## 1. Submit payment details
 
