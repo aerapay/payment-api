@@ -73,7 +73,7 @@ Once your payment got approved, build the checkout URL and redirect the buyer to
 
 https://`AERAPAY_ENVIRONMENT`/?token=`TOKEN`
 
-## 3. After buyer confirmed payment, redirect to the result URL
+## 3. Confirmed payment, redirect to the result URL
 
 Attached is a base64 encoded URL parameter named „result“ JSON String. Decode and parse.
 
