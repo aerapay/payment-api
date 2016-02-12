@@ -23,6 +23,10 @@ Environment | URL
 Live | https://payment.aerapay.com/
 Test | https://payment2test.aerapay.com/
 
+## Authentication
+
+You...
+
 ## 1. Submit payment details
 
 #### POST /checkout
@@ -105,3 +109,10 @@ payer.address.country | *String* | country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
+## 4. Update your payment (optinal)
+
+You...
+
+## 5. Complete your payment
+
+You...
