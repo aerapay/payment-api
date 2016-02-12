@@ -50,7 +50,7 @@ Field | Type | Description
 token | *String* | Token to identitfy and access payment
 result | *Object* | 
 result.code | *Number* | Result code
-result.message | *String* | Result message
+result.message | *String* | Detailed message
 
 __Result Codes__
 
