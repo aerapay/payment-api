@@ -56,7 +56,8 @@ __Result Codes__
 
 Code | Description
 ------|------------
+13 | Authentication failed
 20 | Payment approved
-31 | Authentication failed
+31 | Payment rejected
 44 | Validation error
-57 | Total invalid
+57 | Invalid total
