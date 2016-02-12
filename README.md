@@ -18,6 +18,11 @@ The Aerapay Checkout method allows merchants to receive payments within the Aera
 4. Updates the payment details optional via `POST` to `/update`
 5. Completes the payment via `POST` to `/complete`
 
+Environment | URL
+------|------------
+Live | https://payment.aerapay.com/
+Test | https://testpayment.aerapay.com/
+
 ## 1. Submit payment details
 
 #### POST /checkout
@@ -33,7 +38,7 @@ merchant.email | *String* | No | Support email address
 merchant.website | *String* | No | URL of the merchant's website 
 merchant.image | *String* | No | URL to the merchant's logo
 order | *Object* | Yes | 
-order.currency | *String* | Yes | 3 Letter currency code
+order.currency | *String* | Yes | **Currencies**
 order.total | *String* | Yes | Total amount of the order
 order.shipping | *String* | No | Total shipping costs 
 order.items | *Array* | No | 
@@ -49,7 +54,7 @@ Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
 result | *Object* | 
-result.code | *Number* | Result code
+result.code | *Number* | **Result codes**
 result.message | *String* | Detailed message
 
 __Result Codes__
@@ -61,3 +66,40 @@ Code | Description
 31 | Payment rejected
 44 | Validation error
 57 | Invalid total
+
+## 2. Redirect to checkout page
+
+Once your payment got approved, build the checkout URL and redirect the buyer to the Aerapay checkout page.
+
+https://`AERAPAY_ENVIRONMENT`/?token=`TOKEN`
+
+## 3. After buyer confirmed payment, redirect to the result URL
+
+Attached is a base64 encoded URL parameter named „result“ JSON String. Decode and parse.
+
+Field | Type | Description
+------|------------|------------
+token | *String* | Token to identitfy and access payment
+payment | *Object* | 
+payment.id | *Object* | Identifier of the payment
+payment.status | *String* | **Payment Status**
+payment.method | *String* | **Payment Method**
+payment.currency | *String* | **Currencies**
+payment.total | *String* | Total amount of the payment
+payment.shipping | *String* | Total shipping costs
+payment.fee | *String* | Total fees for the merchant
+payer | *Object* | 
+payer.id | *String* | Account number of the payer
+payer.username | *String* | Username of the payer
+payer.first_name | *String* | First name of the payer
+payer.last_name | *String* | Last name of the payer
+payer.address | *Object* | 
+payer.address.street | *String* | Payer's street name
+payer.address.postal | *String* | Payer's postal code
+payer.address.city | *String* | Payer's city
+payer.address.state | *String* | Payer's state 
+payer.address.country | *String* | Payer's country 
+payer.nationality | *String* | Nationality of the payer
+result.code | *Number* | Result code
+result.message | *String* | Detailed message
+
