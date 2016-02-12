@@ -89,16 +89,16 @@ payment.total | *String* | Total amount of the payment
 payment.shipping | *String* | Total shipping costs
 payment.fee | *String* | Total fees for the merchant
 payer | *Object* | 
-payer.id | *String* | Account number of the payer
-payer.username | *String* | Username of the payer
-payer.first_name | *String* | First name of the payer
-payer.last_name | *String* | Last name of the payer
+payer.id | *String* | Aerapay account number
+payer.username | *String* | Aerapay username
+payer.first_name | *String* | First name
+payer.last_name | *String* | Last name
 payer.address | *Object* | 
-payer.address.street | *String* | Payer's street name
-payer.address.postal | *String* | Payer's postal code
-payer.address.city | *String* | Payer's city
-payer.address.state | *String* | Payer's state 
-payer.address.country | *String* | Payer's country 
+payer.address.street | *String* | street name
+payer.address.postal | *String* | postal code
+payer.address.city | *String* | city
+payer.address.state | *String* | state 
+payer.address.country | *String* | country 
 payer.nationality | *String* | Nationality of the payer
 result.code | *Number* | Result code
 result.message | *String* | Detailed message
