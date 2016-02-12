@@ -46,7 +46,7 @@ order.items[n].id | *String* | No | Identifier of the item
 order.items[n].name | *String* | No | Name of the item
 order.items[n].amount | *String* | No | Amount of the item
 order.items[n].quantity | *String* | No | Number of items
-attachment | *Object* | No | Will be attached to each response
+attachment | *Object* | No | Will be attached to each direct or indirect response
 
 __Response__
 
@@ -56,6 +56,7 @@ token | *String* | Token to identitfy and access payment
 result | *Object* | 
 result.code | *Number* | **Result codes**
 result.message | *String* | Detailed message
+attachment | *Object* | No | Your defined attachment
 
 __Result Codes__
 
@@ -80,6 +81,8 @@ Attached is a base64 encoded URL parameter named „result“ JSON String. Decod
 Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
+result.code | *Number* | Result code
+result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
 payment.status | *String* | **Payment Status**
@@ -100,6 +103,5 @@ payer.address.city | *String* | city
 payer.address.state | *String* | state 
 payer.address.country | *String* | country 
 payer.nationality | *String* | Nationality of the payer
-result.code | *Number* | Result code
-result.message | *String* | Detailed message
+attachment | *Object* | No | Your defined attachment
 
