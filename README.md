@@ -1,12 +1,12 @@
 # Checkout with Aerapay
 
-The Aerapay Checkout method permits merchants to receive payments within the Aerapay platform and gives customers additional payment methods. Online shoppers can pay uing their Aerapay balance or their debit/credit card. The following depicts the integration for your e-Commerce system.
+The Aerapay Checkout method enables merchants to receive payments within the Aerapay platform and gives customers additional payment methods. Online shoppers can pay uing their Aerapay balance or load funds using their debit/credit card. The following depicts the integration for your e-Commerce system.
 
 ###### In the Aerapay Checkout flow, the buyer:
 
 1. Can choose Aerapay Checkout by selecting Checkout with Aerapay
 2. Logs into Aerapay and authenticates his or her identity
-3. Selects a payment method and reviews the transaction on Aerapay
+3. Selects a payment method and reviews the transaction within Aerapay
 4. Confirms the order and pays from your site
 5. Receives an order confirmation
 
