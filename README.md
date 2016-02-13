@@ -1,18 +1,18 @@
 # Checkout with Aerapay
 
-The Aerapay Checkout method allows merchants to receive payments within the Aerapay platform and gives buyers another way to pay. Online shoppers can pay with their Aerapay balance or credit card. The following shows the integration on your e-Commerce system.
+The Aerapay Checkout method permits merchants to receive payments within the Aerapay platform and gives customers additional payment methods. Online shoppers can pay uing their Aerapay balance or their debit/credit card. The following depicts the integration for your e-Commerce system.
 
 ###### In the Aerapay Checkout flow, the buyer:
 
-1. Chooses Aerapay Checkout by clicking Checkout with Aerapay
-2. Logs into Aerapay to authenticate his or her identity
+1. Can choose Aerapay Checkout by selecting Checkout with Aerapay
+2. Logs into Aerapay and authenticates his or her identity
 3. Selects a payment method and reviews the transaction on Aerapay
 4. Confirms the order and pays from your site
 5. Receives an order confirmation
 
-###### In the Aerapay Checkout, the merchant's application:
+###### Uinsg the Aerapay Checkout, on the merchant's web application:
 
-1. Submits all payment details to Aerapay via `POST` to `/checkout` and receives a payment token
+1. Submit all payment details to Aerapay via `POST` to `/checkout` and receives a payment token
 2. Redirects the buyer to the Aerapay checkout page
 3. Recieves the result, and if successful payment and payer information
 4. Updates the payment details optionally via `POST` to `/update`
@@ -20,14 +20,14 @@ The Aerapay Checkout method allows merchants to receive payments within the Aera
 
 Environment | URL
 ------|------------
-Live | https://payment.aerapay.com/
+Live | contact Aerapay for the URL
 Test | https://payment2test.aerapay.com/
 
 ## Authentication
 
 You...
 
-## 1. Submit payment details
+## 1. Submit thepayment details
 
 #### POST /checkout
 
@@ -35,7 +35,7 @@ __Request__
 
 Field | Type | Required | Description
 ------|------------|------------|------------
-redirect | *String* | Yes | Redirect url for payment result
+redirect | *String* | Yes | Redirect url for the payment result
 merchant | *Object* | No | 
 merchant.name | *String* | No | Name of the merchant
 merchant.email | *String* | No | Support email address 
