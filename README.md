@@ -34,7 +34,7 @@ Custom Header | Value
 API_ID | Your `API_ID`
 API_SIGNATURE | sha256( ( REQUEST_BODY as JSON-String ) + `API_SECRET` ) as Base64
 
-## 1. Submit thepayment details
+## 1. Submit the payment details
 
 #### POST /checkout
 
@@ -83,8 +83,15 @@ __Currencies__
 
 Code | Description
 ------|------------
-USD | US Dollars
+AUD | Australian Dollar
+CAD | Canadian Dollar
+CNY | Yuan Renminbi
 EUR | Euro
+GBP | British Pound
+HKD | Hong Kong Dollar
+SGD | Singapore Dollar
+USD | US Dollar
+
 
 ## 2. Redirect to checkout page
 
