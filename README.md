@@ -10,7 +10,7 @@ The Aerapay Checkout method enables merchants to receive payments within the Aer
 4. Confirms the order and pays from your site
 5. Receives an order confirmation
 
-###### Uinsg the Aerapay Checkout, on the merchant's web application:
+###### Using the Aerapay Checkout, on the merchant's web application:
 
 1. Submit all payment details to Aerapay via `POST` to `/checkout` and receives a payment token
 2. Redirects the buyer to the Aerapay checkout page
