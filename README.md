@@ -112,11 +112,11 @@ payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
 payer.address | *Object* | 
-payer.address.street | *String* | street name
-payer.address.postal | *String* | postal code
-payer.address.city | *String* | city
-payer.address.state | *String* | state 
-payer.address.country | *String* | country 
+payer.address.street | *String* | Street name
+payer.address.postal | *String* | Postal code
+payer.address.city | *String* | City
+payer.address.state | *String* | State 
+payer.address.country | *String* | Country 
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
@@ -167,11 +167,11 @@ payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
 payer.address | *Object* | 
-payer.address.street | *String* | street name
-payer.address.postal | *String* | postal code
-payer.address.city | *String* | city
-payer.address.state | *String* | state 
-payer.address.country | *String* | country 
+payer.address.street | *String* | Street name
+payer.address.postal | *String* | Postal code
+payer.address.city | *String* | City
+payer.address.state | *String* | State 
+payer.address.country | *String* | Country 
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
@@ -215,11 +215,11 @@ payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
 payer.address | *Object* | 
-payer.address.street | *String* | street name
-payer.address.postal | *String* | postal code
-payer.address.city | *String* | city
-payer.address.state | *String* | state 
-payer.address.country | *String* | country 
+payer.address.street | *String* | Street name
+payer.address.postal | *String* | Postal code
+payer.address.city | *String* | City
+payer.address.state | *String* | State 
+payer.address.country | *String* | Country 
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
