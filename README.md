@@ -80,9 +80,9 @@ Code | Description
 ------|------------
 13 | Authentication failed
 20 | Payment approved
-31 | Payment rejected
+23 | Payment rejected
 44 | Validation error
-57 | Invalid total
+57 | Order total invalid
 
 ## 2. Redirect to checkout page
 
@@ -124,9 +124,9 @@ __*⁴ Result Codes__
 
 Code | Description
 ------|------------
-11 | Payment confirmed
-28 | Payment canceled
-35 | Payment failed
+21 | Payment confirmed
+24 | Payment canceled
+25 | Payment failed
 
 ## 4. Update your payment (optional)
 
@@ -180,9 +180,10 @@ __*6 Result Codes__
 Code | Description
 ------|------------
 13 | Authentication failed
-29 | Invalid token
-32 | Update successful
-41 | Update failed
+29 | Payment token invalid
+32 | Payment update successful
+35 | Payment update failed
+57 | Order total invalid
 
 ## 5. Complete your payment
 
@@ -227,9 +228,9 @@ __*7 Result Codes__
 Code | Description
 ------|------------
 13 | Authentication failed
-29 | Invalid token
-38 | Payment completed
-45 | Payment failed
+29 | Payment token invalid
+22 | Payment completed
+26 | Payment failed
 
 ## References
 
