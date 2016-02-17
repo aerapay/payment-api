@@ -179,12 +179,53 @@ __*6 Result Codes__
 
 Code | Description
 ------|------------
-17 | Update successful
-29 | Update failed
+13 | Authentication failed
+29 | Update successful
+32 | Update failed
 
 ## 5. Complete your payment
 
-You...
+#### POST /complete
+
+__Request__
+
+Field | Type | Required | Description
+------|------------|------------|------------
+token | *String* | Yes | Payment token
+
+__Response__
+
+Field | Type | Description
+------|------------|------------
+token | *String* | Token to identitfy and access payment
+result.code | *Number* | *Result codes*6
+result.message | *String* | Detailed message
+payment | *Object* | 
+payment.id | *Object* | Identifier of the payment
+payment.status | *String* | *Payment status*³
+payment.method | *String* | *Payment methods*5
+payment.currency | *String* | *Currencies*¹
+payment.total | *String* | Total amount of the payment
+payment.fee | *String* | Total fees for the merchant
+payer | *Object* | 
+payer.id | *String* | Aerapay account number
+payer.username | *String* | Aerapay username
+payer.first_name | *String* | First name
+payer.last_name | *String* | Last name
+payer.address | *Object* | 
+payer.address.street | *String* | street name
+payer.address.postal | *String* | postal code
+payer.address.city | *String* | city
+payer.address.state | *String* | state 
+payer.address.country | *String* | country 
+payer.nationality | *String* | Nationality of the payer
+attachment | *Object* | Your defined attachment
+
+Code | Description
+------|------------
+13 | Authentication failed
+21 | Payment completed
+38 | Payment failed
 
 ## References
 
