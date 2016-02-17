@@ -98,12 +98,12 @@ Attached is a base64 encoded JSON String as URL parameter named „result“. De
 Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
-result.code | *Number* | Result code
+result.code | *Number* | *Result codes*⁴
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
 payment.status | *String* | *Payment status*³
-payment.method | *String* | *Payment methods*⁴
+payment.method | *String* | *Payment methods*5
 payment.currency | *String* | *Currencies*¹
 payment.total | *String* | Total amount of the payment
 payment.shipping | *String* | Total shipping costs
@@ -121,6 +121,14 @@ payer.address.state | *String* | state
 payer.address.country | *String* | country 
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
+
+__*⁴ Result Codes__
+
+Code | Description
+------|------------
+11 | Payment confirmed
+28 | Payment canceled
+35 | Payment failed
 
 ## 4. Update your payment (optional)
 
