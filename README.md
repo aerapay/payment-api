@@ -136,7 +136,7 @@ __Request__
 
 Field | Type | Required | Description
 ------|------------|------------|------------
-token | *String* | Token payment
+token | *String* | Yes | Payment token
 order | *Object* | Yes | 
 order.currency | *String* | Yes | *Currencies*¹
 order.total | *String* | Yes | Total amount of the order
