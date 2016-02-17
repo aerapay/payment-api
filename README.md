@@ -67,6 +67,12 @@ token | *String* | Token to identitfy and access payment
 result | *Object* | 
 result.code | *Number* | **Result codes**
 result.message | *String* | Detailed message
+payment | *Object* | 
+payment.id | *Object* | Identifier of the payment
+payment.status | *String* | **Payment Status**
+payment.currency | *String* | **Currencies**
+payment.total | *String* | Total amount of the payment
+payment.shipping | *String* | Total shipping costs
 attachment | *Object* | Your defined attachment
 
 __Result Codes__
