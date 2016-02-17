@@ -161,6 +161,13 @@ pending | Awaiting payer authentication
 in progress | Awaiting payer confirmation
 settling | Successful, but awaiting settlement
 settled | Successful and settled
-canceled | Payment has been canceled
-failed | Payment has failed
-expired | Payment expired
+canceled | Has been canceled
+failed | Has failed
+expired | expired
+
+__*5 Payment methods__
+
+Value | Description
+------|------------
+credit | Debit / Credit Card 
+transfer | Aerapay Transfer
