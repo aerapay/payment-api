@@ -198,7 +198,7 @@ __Response__
 Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
-result.code | *Number* | *Result codes*6
+result.code | *Number* | *Result codes*7
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
@@ -220,6 +220,8 @@ payer.address.state | *String* | state
 payer.address.country | *String* | country 
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
+
+__*7 Result Codes__
 
 Code | Description
 ------|------------
