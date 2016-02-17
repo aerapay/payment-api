@@ -69,7 +69,7 @@ result.code | *Number* | **Result codes**
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
-payment.status | *String* | **Payment Status**
+payment.status | *String* | **Payment status**
 payment.currency | *String* | **Currencies**
 payment.total | *String* | Total amount of the payment
 payment.shipping | *String* | Total shipping costs
@@ -116,8 +116,8 @@ result.code | *Number* | Result code
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
-payment.status | *String* | **Payment Status**
-payment.method | *String* | **Payment Method**
+payment.status | *String* | **Payment status**
+payment.method | *String* | **Payment methods**
 payment.currency | *String* | **Currencies**
 payment.total | *String* | Total amount of the payment
 payment.shipping | *String* | Total shipping costs
