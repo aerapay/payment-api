@@ -1,6 +1,6 @@
 # Checkout with Aerapay
 
-The Aerapay Checkout method enables merchants to receive payments within the Aerapay platform and gives customers additional payment methods. Online shoppers can pay uing their Aerapay balance or load funds using their debit/credit card. The following depicts the integration for your e-Commerce system.
+The Aerapay Checkout method enables merchants to receive payments within the Aerapay platform and gives customers additional payment methods. Online shoppers can pay using their Aerapay balance or load funds using their debit/credit card. The following depicts the integration for your e-Commerce system.
 
 ###### In the Aerapay Checkout flow, the buyer:
 
@@ -32,7 +32,7 @@ Attach the following custom headers to your API calls
 Custom Header | Value
 ------|------------
 API_ID | Your `API_ID`
-API_SIGNATURE | JSON_STRING(REQUEST_BODY) + 
+API_SIGNATURE | SHA256( JSON_STRING( REQUEST_BODY ) + `API_SECRET` )
 
 ## 1. Submit thepayment details
 
