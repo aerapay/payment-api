@@ -49,7 +49,7 @@ merchant.email | *String* | No | Support email address
 merchant.website | *String* | No | URL of the merchant's website 
 merchant.image | *String* | No | URL to the merchant's logo
 order | *Object* | Yes | 
-order.currency | *String* | Yes | **Currencies**
+order.currency | *String* | Yes | *Currencies*¹
 order.total | *String* | Yes | Total amount of the order
 order.shipping | *String* | No | Total shipping costs 
 order.items | *Array* | No | 
@@ -65,17 +65,17 @@ Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
 result | *Object* | 
-result.code | *Number* | **Result codes**
+result.code | *Number* | *Result codes*²
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
-payment.status | *String* | **Payment status**
-payment.currency | *String* | **Currencies**
+payment.status | *String* | *Payment status*³
+payment.currency | *String* | *Currencies*¹
 payment.total | *String* | Total amount of the payment
 payment.shipping | *String* | Total shipping costs
 attachment | *Object* | Your defined attachment
 
-__Result Codes__
+__*² Result Codes__
 
 Code | Description
 ------|------------
@@ -85,7 +85,7 @@ Code | Description
 44 | Validation error
 57 | Invalid total
 
-__Currencies__
+__*¹ Currencies__
 
 Code | Description
 ------|------------
