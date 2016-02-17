@@ -72,7 +72,6 @@ payment.id | *Object* | Identifier of the payment
 payment.status | *String* | *Payment status*³
 payment.currency | *String* | *Currencies*¹
 payment.total | *String* | Total amount of the payment
-payment.shipping | *String* | Total shipping costs
 attachment | *Object* | Your defined attachment
 
 __*² Result Codes__
@@ -106,7 +105,6 @@ payment.status | *String* | *Payment status*³
 payment.method | *String* | *Payment methods*5
 payment.currency | *String* | *Currencies*¹
 payment.total | *String* | Total amount of the payment
-payment.shipping | *String* | Total shipping costs
 payment.fee | *String* | Total fees for the merchant
 payer | *Object* | 
 payer.id | *String* | Aerapay account number
@@ -132,7 +130,57 @@ Code | Description
 
 ## 4. Update your payment (optional)
 
-You...
+#### POST /update
+
+__Request__
+
+Field | Type | Required | Description
+------|------------|------------|------------
+token | *String* | Token payment
+order | *Object* | Yes | 
+order.currency | *String* | Yes | *Currencies*¹
+order.total | *String* | Yes | Total amount of the order
+order.shipping | *String* | No | Total shipping costs 
+order.items | *Array* | No | 
+order.items[n].id | *String* | No | Identifier of the item
+order.items[n].name | *String* | No | Name of the item
+order.items[n].amount | *String* | No | Amount of the item
+order.items[n].quantity | *String* | No | Number of items
+
+__Response__
+
+Field | Type | Description
+------|------------|------------
+token | *String* | Token to identitfy and access payment
+result.code | *Number* | *Result codes*6
+result.message | *String* | Detailed message
+payment | *Object* | 
+payment.id | *Object* | Identifier of the payment
+payment.status | *String* | *Payment status*³
+payment.method | *String* | *Payment methods*5
+payment.currency | *String* | *Currencies*¹
+payment.total | *String* | Total amount of the payment
+payment.fee | *String* | Total fees for the merchant
+payer | *Object* | 
+payer.id | *String* | Aerapay account number
+payer.username | *String* | Aerapay username
+payer.first_name | *String* | First name
+payer.last_name | *String* | Last name
+payer.address | *Object* | 
+payer.address.street | *String* | street name
+payer.address.postal | *String* | postal code
+payer.address.city | *String* | city
+payer.address.state | *String* | state 
+payer.address.country | *String* | country 
+payer.nationality | *String* | Nationality of the payer
+attachment | *Object* | Your defined attachment
+
+__*6 Result Codes__
+
+Code | Description
+------|------------
+17 | Update successful
+29 | Update failed
 
 ## 5. Complete your payment
 
@@ -142,7 +190,7 @@ You...
 
 __*¹ Currencies__
 
-Code | Description
+Value | Description
 ------|------------
 AUD | Australian Dollar
 CAD | Canadian Dollar
