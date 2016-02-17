@@ -152,3 +152,15 @@ GBP | British Pound
 HKD | Hong Kong Dollar
 SGD | Singapore Dollar
 USD | US Dollar
+
+__*³ Payment status__
+
+Value | Description
+------|------------
+pending | Awaiting payer authentication
+in progress | Awaiting payer confirmation
+settling | Successful, but awaiting settlement
+settled | Successful and settled
+canceled | Payment has been canceled
+failed | Payment has failed
+expired | Payment expired
