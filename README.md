@@ -180,8 +180,9 @@ __*6 Result Codes__
 Code | Description
 ------|------------
 13 | Authentication failed
-29 | Update successful
-32 | Update failed
+29 | Invalid token
+32 | Update successful
+41 | Update failed
 
 ## 5. Complete your payment
 
@@ -226,8 +227,9 @@ __*7 Result Codes__
 Code | Description
 ------|------------
 13 | Authentication failed
-21 | Payment completed
-38 | Payment failed
+29 | Invalid token
+38 | Payment completed
+45 | Payment failed
 
 ## References
 
