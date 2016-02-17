@@ -256,7 +256,7 @@ settling | Successful, but awaiting settlement
 settled | Successful and settled
 canceled | Has been canceled
 failed | Has failed
-expired | expired
+expired | Expired
 
 __*5 Payment methods__
 
