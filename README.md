@@ -85,20 +85,6 @@ Code | Description
 44 | Validation error
 57 | Invalid total
 
-__*¹ Currencies__
-
-Code | Description
-------|------------
-AUD | Australian Dollar
-CAD | Canadian Dollar
-CNY | Yuan Renminbi
-EUR | Euro
-GBP | British Pound
-HKD | Hong Kong Dollar
-SGD | Singapore Dollar
-USD | US Dollar
-
-
 ## 2. Redirect to checkout page
 
 Once your payment got approved, build the checkout URL and redirect the buyer to the Aerapay checkout page.
@@ -143,3 +129,18 @@ You...
 ## 5. Complete your payment
 
 You...
+
+## References
+
+__*¹ Currencies__
+
+Code | Description
+------|------------
+AUD | Australian Dollar
+CAD | Canadian Dollar
+CNY | Yuan Renminbi
+EUR | Euro
+GBP | British Pound
+HKD | Hong Kong Dollar
+SGD | Singapore Dollar
+USD | US Dollar
