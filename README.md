@@ -205,8 +205,8 @@ __*³ Payment status__
 
 Value | Description
 ------|------------
-pending | Awaiting payer authentication
-in progress | Awaiting payer confirmation
+pending | Awaiting payer confirmation
+in progress | Awaiting payment completion
 settling | Successful, but awaiting settlement
 settled | Successful and settled
 canceled | Has been canceled
