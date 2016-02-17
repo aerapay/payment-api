@@ -32,7 +32,7 @@ Attach the following custom headers to your API calls
 Custom Header | Value
 ------|------------
 API_ID | Your `API_ID`
-API_SIGNATURE | SHA256( JSON_STRING( REQUEST_BODY ) + `API_SECRET` )
+API_SIGNATURE | sha256( ( REQUEST_BODY as JSON-String ) + `API_SECRET` ) as Base64
 
 ## 1. Submit thepayment details
 
