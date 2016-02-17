@@ -25,7 +25,14 @@ Test | https://payment2test.aerapay.com/
 
 ## Authentication
 
-You...
+Aerapay will provide an `API_ID` and an `API_SECRET` to sign the API requests.
+
+Attach the following custom headers to your API calls
+
+Custom Header | Value
+------|------------
+API_ID | Your `API_ID`
+API_SIGNATURE | JSON_STRING(REQUEST_BODY) + 
 
 ## 1. Submit thepayment details
 
