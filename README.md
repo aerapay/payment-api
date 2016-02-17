@@ -102,9 +102,9 @@ result.code | *Number* | Result code
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
-payment.status | *String* | **Payment status**
-payment.method | *String* | **Payment methods**
-payment.currency | *String* | **Currencies**
+payment.status | *String* | *Payment status*³
+payment.method | *String* | *Payment methods*⁴
+payment.currency | *String* | *Currencies*¹
 payment.total | *String* | Total amount of the payment
 payment.shipping | *String* | Total shipping costs
 payment.fee | *String* | Total fees for the merchant
