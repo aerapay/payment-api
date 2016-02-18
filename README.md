@@ -125,8 +125,8 @@ __(4) Result Codes__
 Code | Description
 ------|------------
 21 | Payment confirmed
-24 | Payment canceled
-25 | Payment failed
+22 | Payment canceled
+24 | Payment failed
 
 ## 4. Update your payment (optional)
 
@@ -181,8 +181,8 @@ Code | Description
 ------|------------
 13 | Authentication failed
 29 | Payment token invalid
-32 | Payment update successful
-35 | Payment update failed
+32 | Update successful
+34 | Update failed
 44 | Validation error
 57 | Order total invalid
 
@@ -230,8 +230,8 @@ Code | Description
 ------|------------
 13 | Authentication failed
 29 | Payment token invalid
-22 | Payment completed
-26 | Payment failed
+27 | Completion successful
+29 | Completion failed
 
 ## References
 
