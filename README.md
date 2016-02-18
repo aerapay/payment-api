@@ -120,7 +120,7 @@ payer.address.country | *String* | Country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
-__*(4) Result Codes__
+__(4) Result Codes__
 
 Code | Description
 ------|------------
@@ -175,7 +175,7 @@ payer.address.country | *String* | Country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
-__*(6) Result Codes__
+__(6) Result Codes__
 
 Code | Description
 ------|------------
@@ -223,7 +223,7 @@ payer.address.country | *String* | Country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
-__*(7) Result Codes__
+__(7) Result Codes__
 
 Code | Description
 ------|------------
@@ -234,7 +234,7 @@ Code | Description
 
 ## References
 
-__*(1) Currencies__
+__(1) Currencies__
 
 Value | Description
 ------|------------
@@ -247,7 +247,7 @@ HKD | Hong Kong Dollar
 SGD | Singapore Dollar
 USD | US Dollar
 
-__*(3) Payment status__
+__(3) Payment status__
 
 Value | Description
 ------|------------
@@ -259,7 +259,7 @@ canceled | Has been canceled
 failed | Has failed
 expired | Expired
 
-__*(5) Payment methods__
+__(5) Payment methods__
 
 Value | Description
 ------|------------
