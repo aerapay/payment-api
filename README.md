@@ -49,7 +49,7 @@ merchant.email | *String* | No | Support email address
 merchant.website | *String* | No | URL of the merchant's website 
 merchant.image | *String* | No | URL to the merchant's logo
 order | *Object* | Yes | 
-order.currency | *String* | Yes | *Currencies*¹
+order.currency | *String* | Yes | *Currencies* (1)
 order.total | *String* | Yes | Total amount of the order
 order.shipping | *String* | No | Total shipping costs 
 order.items | *Array* | No | 
@@ -65,16 +65,16 @@ Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
 result | *Object* | 
-result.code | *Number* | *Result codes*²
+result.code | *Number* | *Result codes* (2)
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
-payment.status | *String* | *Payment status*³
-payment.currency | *String* | *Currencies*¹
+payment.status | *String* | *Payment status* (3)
+payment.currency | *String* | *Currencies* (1)
 payment.total | *String* | Total amount of the payment
 attachment | *Object* | Your defined attachment
 
-__*² Result Codes__
+__(2) Result Codes__
 
 Code | Description
 ------|------------
@@ -97,13 +97,13 @@ Attached is a base64 encoded JSON String as URL parameter named „result“. De
 Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
-result.code | *Number* | *Result codes*⁴
+result.code | *Number* | *Result codes* (4)
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
-payment.status | *String* | *Payment status*³
-payment.method | *String* | *Payment methods*5
-payment.currency | *String* | *Currencies*¹
+payment.status | *String* | *Payment status* (3)
+payment.method | *String* | *Payment methods* (5)
+payment.currency | *String* | *Currencies* (1)
 payment.total | *String* | Total amount of the payment
 payment.fee | *String* | Total fees for the merchant
 payer | *Object* | 
@@ -120,7 +120,7 @@ payer.address.country | *String* | Country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
-__*⁴ Result Codes__
+__*(4) Result Codes__
 
 Code | Description
 ------|------------
@@ -138,7 +138,7 @@ Field | Type | Required | Description
 ------|------------|------------|------------
 token | *String* | Yes | Payment token
 order | *Object* | Yes | 
-order.currency | *String* | Yes | *Currencies*¹
+order.currency | *String* | Yes | *Currencies* (1)
 order.total | *String* | Yes | Total amount of the order
 order.shipping | *String* | No | Total shipping costs 
 order.items | *Array* | No | 
@@ -152,12 +152,12 @@ __Response__
 Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
-result.code | *Number* | *Result codes*6
+result.code | *Number* | *Result codes* (6)
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
-payment.status | *String* | *Payment status*³
-payment.method | *String* | *Payment methods*5
+payment.status | *String* | *Payment status* (3)
+payment.method | *String* | *Payment methods* (5)
 payment.currency | *String* | *Currencies*¹
 payment.total | *String* | Total amount of the payment
 payment.fee | *String* | Total fees for the merchant
@@ -175,7 +175,7 @@ payer.address.country | *String* | Country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
-__*6 Result Codes__
+__*(6) Result Codes__
 
 Code | Description
 ------|------------
@@ -200,12 +200,12 @@ __Response__
 Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
-result.code | *Number* | *Result codes*7
+result.code | *Number* | *Result codes* (7)
 result.message | *String* | Detailed message
 payment | *Object* | 
 payment.id | *Object* | Identifier of the payment
-payment.status | *String* | *Payment status*³
-payment.method | *String* | *Payment methods*5
+payment.status | *String* | *Payment status* (3)
+payment.method | *String* | *Payment methods* (5)
 payment.currency | *String* | *Currencies*¹
 payment.total | *String* | Total amount of the payment
 payment.fee | *String* | Total fees for the merchant
@@ -223,7 +223,7 @@ payer.address.country | *String* | Country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
-__*7 Result Codes__
+__*(7) Result Codes__
 
 Code | Description
 ------|------------
@@ -234,7 +234,7 @@ Code | Description
 
 ## References
 
-__*¹ Currencies__
+__*(1) Currencies__
 
 Value | Description
 ------|------------
@@ -247,7 +247,7 @@ HKD | Hong Kong Dollar
 SGD | Singapore Dollar
 USD | US Dollar
 
-__*³ Payment status__
+__*(3) Payment status__
 
 Value | Description
 ------|------------
@@ -259,7 +259,7 @@ canceled | Has been canceled
 failed | Has failed
 expired | Expired
 
-__*5 Payment methods__
+__*(5) Payment methods__
 
 Value | Description
 ------|------------
