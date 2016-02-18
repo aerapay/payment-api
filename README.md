@@ -76,13 +76,13 @@ attachment | *Object* | Your defined attachment
 
 __(2) Result Codes__
 
-Code | Description
-------|------------
-13 | Authentication failed
-20 | Payment approved
-23 | Payment rejected
-44 | Validation error
-57 | Order total invalid
+Code | Description | HTTP Status
+------|------------|------------
+13 | Authentication failed | 400
+20 | Payment approved | 200
+23 | Payment rejected | 400
+44 | Validation error | 400
+57 | Order total invalid | 400
 
 ## 2. Redirect to checkout page
 
@@ -177,14 +177,14 @@ attachment | *Object* | Your defined attachment
 
 __(6) Result Codes__
 
-Code | Description
-------|------------
-13 | Authentication failed
-29 | Payment token invalid
-32 | Update successful
-34 | Update failed
-44 | Validation error
-57 | Order total invalid
+Code | Description | HTTP Status
+------|------------|------------
+13 | Authentication failed | 400
+29 | Payment token invalid | 400
+32 | Update successful | 200
+34 | Update failed | 400
+44 | Validation error | 400
+57 | Order total invalid | 400
 
 ## 5. Complete your payment
 
@@ -226,12 +226,12 @@ attachment | *Object* | Your defined attachment
 
 __(7) Result Codes__
 
-Code | Description
-------|------------
-13 | Authentication failed
-29 | Payment token invalid
-27 | Completion successful
-29 | Completion failed
+Code | Description | HTTP Status
+------|------------|------------
+13 | Authentication failed | 400
+29 | Payment token invalid | 400
+27 | Completion successful | 200
+29 | Completion failed | 400
 
 ## References
 
