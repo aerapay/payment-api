@@ -254,7 +254,7 @@ Value | Description
 ------|------------
 pending | Awaiting payer confirmation
 in progress | Awaiting payment completion
-settling | Successful, but awaiting settlement
+settling | Successful but awaiting settlement
 settled | Successful and settled
 canceled | Has been canceled
 failed | Has failed
