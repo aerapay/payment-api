@@ -183,6 +183,7 @@ Code | Description
 29 | Payment token invalid
 32 | Payment update successful
 35 | Payment update failed
+44 | Validation error
 57 | Order total invalid
 
 ## 5. Complete your payment
