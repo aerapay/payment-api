@@ -8,15 +8,13 @@ The Aerapay Checkout method enables merchants to receive payments within the Aer
 2. Logs into Aerapay and authenticates his or her identity
 3. Selects a payment method and reviews the transaction within Aerapay
 4. Confirms the order and pays from your site
-5. Receives an order confirmation
 
 ###### Using the Aerapay Checkout, on the merchant's web application:
 
 1. Submit all payment details to Aerapay via `POST` to `/checkout` and receives a payment token
 2. Redirect the buyer to the Aerapay checkout page
 3. Recieve the result, and if successful payment and payer information
-4. Update the payment details optionally via `POST` to `/update`
-5. Complete the payment via `POST` to `/complete`
+4. Complete the payment via `POST` to `/complete`
 
 Environment | URL
 ------|------------
@@ -128,24 +126,15 @@ Code | Description
 22 | Payment canceled
 24 | Payment failed
 
-## 4. Update your payment (optional)
+## 4. Complete your payment
 
-#### POST /update
+#### POST /complete
 
 __Request__
 
 Field | Type | Required | Description
 ------|------------|------------|------------
 token | *String* | Yes | Payment token
-order | *Object* | Yes | 
-order.currency | *String* | Yes | *Currencies* (1)
-order.total | *String* | Yes | Total amount of the order
-order.shipping | *String* | No | Total shipping costs 
-order.items | *Array* | No | 
-order.items[n].id | *String* | No | Identifier of the item
-order.items[n].name | *String* | No | Name of the item
-order.items[n].amount | *String* | No | Amount of the item
-order.items[n].quantity | *String* | No | Number of items
 
 __Response__
 
@@ -176,55 +165,6 @@ payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
 __(6) Result Codes__
-
-Code | Description | HTTP Status
-------|------------|------------
-13 | Authentication failed | 400
-29 | Payment token invalid | 400
-32 | Update successful | 200
-34 | Update failed | 400
-44 | Validation error | 400
-57 | Order total invalid | 400
-
-## 5. Complete your payment
-
-#### POST /complete
-
-__Request__
-
-Field | Type | Required | Description
-------|------------|------------|------------
-token | *String* | Yes | Payment token
-
-__Response__
-
-Field | Type | Description
-------|------------|------------
-token | *String* | Token to identitfy and access payment
-result.code | *Number* | *Result codes* (7)
-result.message | *String* | Detailed message
-payment | *Object* | 
-payment.id | *Object* | Identifier of the payment
-payment.status | *String* | *Payment status* (3)
-payment.method | *String* | *Payment methods* (5)
-payment.currency | *String* | *Currencies*¹
-payment.total | *String* | Total amount of the payment
-payment.fee | *String* | Total fees for the merchant
-payer | *Object* | 
-payer.id | *String* | Aerapay account number
-payer.username | *String* | Aerapay username
-payer.first_name | *String* | First name
-payer.last_name | *String* | Last name
-payer.address | *Object* | 
-payer.address.street | *String* | Street name
-payer.address.postal | *String* | Postal code
-payer.address.city | *String* | City
-payer.address.state | *String* | State 
-payer.address.country | *String* | Country 
-payer.nationality | *String* | Nationality of the payer
-attachment | *Object* | Your defined attachment
-
-__(7) Result Codes__
 
 Code | Description | HTTP Status
 ------|------------|------------
