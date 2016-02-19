@@ -35,7 +35,7 @@ API_SIGNATURE | sha256( ( REQUEST_BODY as JSON-String ) + `API_SECRET` ) as Base
 ## 1. Submit the payment details
 
 #### POST /checkout
-Content-Type: application/json
+**Content-Type:** application/json
 
 __Request__
 
@@ -130,7 +130,7 @@ Code | Description
 ## 4. Complete your payment
 
 #### POST /complete
-Content-Type: application/json
+**Content-Type:** application/json
 
 __Request__
 
