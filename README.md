@@ -196,6 +196,7 @@ Value | Description
 ------|------------
 pending | Awaiting payer confirmation
 in progress | Awaiting payment completion
+awaiting | Successful but awaiting bank transfer
 settling | Successful but awaiting settlement
 settled | Successful and settled
 canceled | Has been canceled
@@ -208,3 +209,4 @@ Value | Description
 ------|------------
 credit | Debit / Credit Card 
 transfer | Aerapay Transfer
+bank | Bank Transfer
