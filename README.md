@@ -110,6 +110,7 @@ payer.id | *String* | Aerapay account number
 payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
+payer.account_type | *String* | *Account types* (7)
 payer.address | *Object* | 
 payer.address.street | *String* | Street name
 payer.address.postal | *String* | Postal code
@@ -157,6 +158,7 @@ payer.id | *String* | Aerapay account number
 payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
+payer.account_type | *String* | *Account types* (7)
 payer.address | *Object* | 
 payer.address.street | *String* | Street name
 payer.address.postal | *String* | Postal code
@@ -210,3 +212,10 @@ Value | Description
 credit | Debit / Credit Card 
 transfer | Aerapay Transfer
 bank | Bank Transfer
+
+__(7) Account types__
+
+Value | Description
+------|------------
+personal | Personal Account 
+company | Corporate Account
