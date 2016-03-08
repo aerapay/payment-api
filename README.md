@@ -111,6 +111,7 @@ payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
 payer.account_type | *String* | *Account types* (7)
+payer.email | *String* | Aerapay account email
 payer.address | *Object* | 
 payer.address.street | *String* | Street name
 payer.address.postal | *String* | Postal code
@@ -159,6 +160,7 @@ payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
 payer.account_type | *String* | *Account types* (7)
+payer.email | *String* | Aerapay account email
 payer.address | *Object* | 
 payer.address.street | *String* | Street name
 payer.address.postal | *String* | Postal code
