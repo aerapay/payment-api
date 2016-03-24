@@ -177,7 +177,7 @@ Code | Description | HTTP Status
 13 | Authentication failed | 400
 29 | Payment token invalid | 400
 27 | Completion successful | 200
-29 | Completion failed | 400
+28 | Completion failed | 400
 
 ## References
 
