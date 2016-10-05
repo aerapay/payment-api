@@ -42,6 +42,7 @@ __Request__
 Field | Type | Required | Description
 ------|------------|------------|------------
 redirect | *String* | Yes | Redirect url for the payment result
+notificationUrl | *String* | No | Url for payment status notifications
 merchant | *Object* | No | 
 merchant.name | *String* | No | Name of the merchant
 merchant.email | *String* | No | Support email address 
