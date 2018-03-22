@@ -3,7 +3,7 @@
 	$API_ID = 'YOUR_APP_ID';
 	$API_SECRET = 'YOUR_APP_SECRET';
 
-	$API_URL = 'https://payment2test.aerapay.com';
+	$API_URL = 'https://payment.staging.aerapay.com';
 
 	// Create body
 	$request_body = array(
@@ -26,8 +26,8 @@
 
 	// Set headers
 	curl_setopt($ch, CURLOPT_HTTPHEADER, [
-			"API_ID: " . $API_ID,
-			"API_SIGNATURE: " . $API_SIGNATURE,
+			"X-API-ID: " . $API_ID,
+			"X-API-Signature: " . $API_SIGNATURE,
 			"Content-Type: application/json",
 		]
 	);

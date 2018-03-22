@@ -19,7 +19,7 @@ The Aerapay Checkout method enables merchants to receive payments within the Aer
 Environment | URL
 ------|------------
 Live | contact Aerapay for the URL
-Test | https://payment2test.aerapay.com/
+Test | https://payment.staging.aerapay.com/
 
 ## Authentication
 
@@ -29,8 +29,8 @@ Attach the following custom headers to your API calls
 
 Custom Header | Value
 ------|------------
-API_ID | Your `API_ID`
-API_SIGNATURE | sha256( ( REQUEST_BODY as JSON-String ) + `API_SECRET` ) as Base64
+X-API-ID | Your `API_ID`
+X-API-Signature | sha256( ( REQUEST_BODY as JSON-String ) + `API_SECRET` ) as Base64
 
 ## 1. Submit the payment details
 
@@ -41,18 +41,23 @@ __Request__
 
 Field | Type | Required | Description
 ------|------------|------------|------------
+<<<<<<< HEAD
 redirectUrl | *String* | Yes | Redirect url for the payment result
 notificationUrl | *String* | No | Url for payment status notifications
 merchant | *Object* | No | 
+=======
+redirect | *String* | Yes | Redirect url for the payment result
+merchant | *Object* | No |
+>>>>>>> Adjust new environment
 merchant.name | *String* | No | Name of the merchant
-merchant.email | *String* | No | Support email address 
-merchant.website | *String* | No | URL of the merchant's website 
+merchant.email | *String* | No | Support email address
+merchant.website | *String* | No | URL of the merchant's website
 merchant.image | *String* | No | URL to the merchant's logo
-order | *Object* | Yes | 
+order | *Object* | Yes |
 order.currency | *String* | Yes | *Currencies* (1)
 order.total | *String* | Yes | Total amount of the order
-order.shipping | *String* | No | Total shipping costs 
-order.items | *Array* | No | 
+order.shipping | *String* | No | Total shipping costs
+order.items | *Array* | No |
 order.items[n].id | *String* | No | Identifier of the item
 order.items[n].name | *String* | No | Name of the item
 order.items[n].amount | *String* | No | Amount of the item
@@ -64,10 +69,10 @@ __Response__
 Field | Type | Description
 ------|------------|------------
 token | *String* | Token to identitfy and access payment
-result | *Object* | 
+result | *Object* |
 result.code | *Number* | *Result codes* (2)
 result.message | *String* | Detailed message
-payment | *Object* | 
+payment | *Object* |
 payment.id | *Object* | Identifier of the payment
 payment.status | *String* | *Payment status* (3)
 payment.currency | *String* | *Currencies* (1)
@@ -99,26 +104,30 @@ Field | Type | Description
 token | *String* | Token to identitfy and access payment
 result.code | *Number* | *Result codes* (4)
 result.message | *String* | Detailed message
-payment | *Object* | 
+payment | *Object* |
 payment.id | *Object* | Identifier of the payment
 payment.status | *String* | *Payment status* (3)
 payment.method | *String* | *Payment methods* (5)
 payment.currency | *String* | *Currencies* (1)
 payment.total | *String* | Total amount of the payment
 payment.fee | *String* | Total fees for the merchant
-payer | *Object* | 
+payer | *Object* |
 payer.id | *String* | Aerapay account number
 payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
+<<<<<<< HEAD
 payer.account_type | *String* | *Account types* (7)
 payer.email | *String* | Aerapay account email
 payer.address | *Object* | 
+=======
+payer.address | *Object* |
+>>>>>>> Adjust new environment
 payer.address.street | *String* | Street name
 payer.address.postal | *String* | Postal code
 payer.address.city | *String* | City
-payer.address.state | *String* | State 
-payer.address.country | *String* | Country 
+payer.address.state | *String* | State
+payer.address.country | *String* | Country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
@@ -148,26 +157,30 @@ Field | Type | Description
 token | *String* | Token to identitfy and access payment
 result.code | *Number* | *Result codes* (6)
 result.message | *String* | Detailed message
-payment | *Object* | 
+payment | *Object* |
 payment.id | *Object* | Identifier of the payment
 payment.status | *String* | *Payment status* (3)
 payment.method | *String* | *Payment methods* (5)
 payment.currency | *String* | *Currencies*¹
 payment.total | *String* | Total amount of the payment
 payment.fee | *String* | Total fees for the merchant
-payer | *Object* | 
+payer | *Object* |
 payer.id | *String* | Aerapay account number
 payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
+<<<<<<< HEAD
 payer.account_type | *String* | *Account types* (7)
 payer.email | *String* | Aerapay account email
 payer.address | *Object* | 
+=======
+payer.address | *Object* |
+>>>>>>> Adjust new environment
 payer.address.street | *String* | Street name
 payer.address.postal | *String* | Postal code
 payer.address.city | *String* | City
-payer.address.state | *String* | State 
-payer.address.country | *String* | Country 
+payer.address.state | *String* | State
+payer.address.country | *String* | Country
 payer.nationality | *String* | Nationality of the payer
 attachment | *Object* | Your defined attachment
 
@@ -212,7 +225,7 @@ __(5) Payment methods__
 
 Value | Description
 ------|------------
-credit | Debit / Credit Card 
+credit | Debit / Credit Card
 transfer | Aerapay Transfer
 bank | Bank Transfer
 
