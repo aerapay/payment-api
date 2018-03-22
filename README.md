@@ -41,14 +41,9 @@ __Request__
 
 Field | Type | Required | Description
 ------|------------|------------|------------
-<<<<<<< HEAD
 redirectUrl | *String* | Yes | Redirect url for the payment result
 notificationUrl | *String* | No | Url for payment status notifications
-merchant | *Object* | No | 
-=======
-redirect | *String* | Yes | Redirect url for the payment result
 merchant | *Object* | No |
->>>>>>> Adjust new environment
 merchant.name | *String* | No | Name of the merchant
 merchant.email | *String* | No | Support email address
 merchant.website | *String* | No | URL of the merchant's website
@@ -116,13 +111,9 @@ payer.id | *String* | Aerapay account number
 payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
-<<<<<<< HEAD
 payer.account_type | *String* | *Account types* (7)
 payer.email | *String* | Aerapay account email
-payer.address | *Object* | 
-=======
 payer.address | *Object* |
->>>>>>> Adjust new environment
 payer.address.street | *String* | Street name
 payer.address.postal | *String* | Postal code
 payer.address.city | *String* | City
@@ -169,13 +160,9 @@ payer.id | *String* | Aerapay account number
 payer.username | *String* | Aerapay username
 payer.first_name | *String* | First name
 payer.last_name | *String* | Last name
-<<<<<<< HEAD
 payer.account_type | *String* | *Account types* (7)
 payer.email | *String* | Aerapay account email
-payer.address | *Object* | 
-=======
 payer.address | *Object* |
->>>>>>> Adjust new environment
 payer.address.street | *String* | Street name
 payer.address.postal | *String* | Postal code
 payer.address.city | *String* | City
@@ -233,5 +220,5 @@ __(7) Account types__
 
 Value | Description
 ------|------------
-personal | Personal Account 
+personal | Personal Account
 company | Corporate Account
